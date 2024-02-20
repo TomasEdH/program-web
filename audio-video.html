@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h2>Etiqueta de audio</h2>
+            <audio src="./audio.mp3" controls="controls"></audio>
+        </div>
+        <div>
+            <h2>Etiqueta de video</h2>
+            <video controls="controls" width="500px">
+                <source src="./video.mp4">
+                <source src="./video.webm">
+                <source src="./video.ogg">
+                Tu navegador no es compatible con ninguno de los formatos de video
+            </video>
+            <!--Para renderizar un video de Youtube desde una URL se debe de usar la etiqueta iframe-->
+            <iframe src="link-del-video" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </main>
+</body>
+</html>
