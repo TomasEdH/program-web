@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+    body{
+        color: #fff;
+        background-image: url(./imagen.png);
+        background-repeat: repeat-x;
+    }
+    #img-box{
+        background-color: #fff;
+        padding: 40px;
+
+
+        img{
+         box-shadow: 10px 10px 10px 6px black;
+        }
+    }
+
+    #multimedia{
+        padding-bottom: 60px;
+    }
+    </style>
+
+    <main style="display: flex; flex-direction: column; align-items: center;">
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <div>
+                <h2>Etiqueta de audio</h2>
+                <audio src="./audio.mp3" controls="controls"></audio>
+            </div>
+            <div>
+                <h2>Etiqueta de video</h2>
+                <video controls="controls" width="500px">
+                    <source src="./video.mp4">
+                    <source src="./video.webm">
+                    <source src="./video.ogg">
+                    Tu navegador no es compatible con ninguno de los formatos de video
+                </video>
+            </div>
+        </section>
+
+        <section id="img-box">
+            <h3 style="color: black;">
+                Imagen con sombra
+            </h3>
+            <img src="./imagen.png" alt="" width="200px" height="200px">
+        </section>
+
+        <div>
+            <h3>Formulario</h3>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Nombre</td>
+                      <td><input type="text" required /></td>
+                    </tr>
+                    <tr>
+                      <td>Apellido</td>
+                      <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td>Email</td>
+                      <td><input type="email" /></td>
+                    </tr>
+                    <tr>
+                      <td>Fecha de nacimiento</td>
+                      <td><input type="date" /></td>
+                    </tr>
+                    <tr>
+                      <td>Estado civil</td>
+                      <td><select>
+                        <option value="" disabled selected>Escoge uno</option>
+                        <option value="">Soltero</option>
+                        <option value="">Casado</option>
+                        <option value="">Casi algo</option>
+                      </select>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>Color favorito</td>
+                      <td><input type="color" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+        </div>
+
+    </main>
+</body>
+
+</html>
