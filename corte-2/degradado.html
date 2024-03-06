@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="300px" height="300px" style="border: solid 2px black;">
+
+    </canvas>
+    <script>
+        let c = document.getElementById('canvas')
+        let ctx = c.getContext('2d')
+        let gradient = c.createLinearGradient(100, 0, 300, 0)
+        gradient.addColorStop('#fff')
+        gradient.addColorStop(0.30, 'yellow')
+        gradient.addColorStop(0.5, 'green')
+        gradient.addColorStop(0,75, 'blue')
+        gradient.addColorStop(1, '#000')
+
+        ctx.fillStyle-gradient
+        ctx.fillRect(0,0,400,400)
+    </script>
+</body>
+</html>
