@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: Onest;
+        src: url(./fonts/Onest-Medium.ttf);
+      }
+
+      body {
+        font-family: Onest;
+        margin: 0 auto;
+        padding: 0;
+        background: url(./fondo.webp);
+        max-width: 1500px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      main {
+        margin-top: 190px;
+      }
+
+      section,
+      div {
+        margin-bottom: 40px;
+        h3,
+        p {
+          padding: 0 40px 0 40px;
+        }
+        h3 {
+          font-size: 28px;
+          text-wrap: balance;
+        }
+      }
+
+      #title {
+        text-align: center;
+        position: fixed;
+        /*
+    El color queda comentado ya que es otra opción viable
+    background-color: rgba(255, 255, 255, 0.459);
+    */
+        /*Esta es una forma mucho mejor para hacer fondos con efectos de transparencia*/
+        backdrop-filter: blur(5px);
+        width: 100vw;
+      }
+
+      .border-box{
+        border-radius: 10px 50px;
+      }
+
+      .shadow-box {
+        padding: 10px;
+        box-shadow: 10px 10px 10px 0;
+        background-color: rgb(231, 94, 94);
+        border: 0.3rem solid black;
+      }
+
+      .editable-content-box {
+        border: 0.3rem solid black;
+        padding: 0 20px 0 20px;
+        background-color: white;
+      }
+
+      #audios-box {
+        border: 0.3rem solid black;
+        padding: 0 20px 0 20px;
+        border-radius: 20px;
+        background-color: rgb(24, 155, 155);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+
+      #videos-section {
+        border: 0.3rem solid black;
+        padding: 20px;
+        background-color: wheat;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+
+        div{
+          text-align: center;
+        }
+      }
+
+      article {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        grid-gap: 20px;
+      }
+
+      footer{
+        padding: 20px 0 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="title">
+      <h1>
+        PAGINA CON LOS TEMAS VISTOS (este titulo tiene fondo transparente)
+      </h1>
+    </header>
+    <main>
+      <article>
+        <!-- ESTE ARTICLE CONTIENE LAS COLUMNAS MULTIPLES DIVIDIDAS EN 3 !-->
+        <section class="border-box shadow-box">
+          <h3>Wordbreak y shadow</h3>
+          <p>
+            Los experimentos sugieren que el universo se ha regido por las
+            mismas leyes físicas, constantes a lo largo de su extensión e
+            historia. Es homogéneo e isotrópico. <br />
+            La fuerza dominante en distancias cósmicas es la gravedad, y la
+            relatividad general es actualmente la teoría más exacta para
+            describirla. Las otras tres fuerzas fundamentales, y las partículas
+            en las que actúan, son descritas por el modelo estándar. <br />El
+            universo tiene por lo menos tres dimensiones de espacio y una de
+            tiempo, aunque experimentalmente no se pueden descartar dimensiones
+            adicionales. <br />
+            El espacio-tiempo parece estar conectado de forma sencilla, y el
+            espacio tiene una curvatura media muy pequeña o incluso nula, de
+            manera que la geometría euclidiana es, como norma general, exacta en
+            todo el universo.
+          </p>
+        </section>
+
+        <div contenteditable="true" class="border-box editable-content-box">
+          <h3>Contenido editable y border radius</h3>
+          <ul>
+            <li contenteditable="true">Elemento editable 1</li>
+            <li contenteditable="true">Elemento editable 2</li>
+            <li contenteditable="true">Elemento editable 3</li>
+            <li contenteditable="true">Elemento editable 4</li>
+            <li contenteditable="true">Elemento editable 5</li>
+            <li contenteditable="true">Elemento editable 6</li>
+          </ul>
+          <p>
+            El atributo contenteditable en HTML permite que los usuarios editen
+            el contenido de un elemento directamente en el navegador web. Cuando
+            un elemento tiene este atributo establecido en "true", se convierte
+            en editable, lo que significa que su contenido se puede modificar,
+            seleccionar y eliminar como si fuera un editor de texto.
+          </p>
+        </div>
+
+        <div id="audios-box">
+          <h3>Audios</h3>
+          <audio
+            controls="controls"
+            src="./y2mate.com - 10 Segundos.mp3"
+          ></audio>
+          <audio
+            controls="controls"
+            src="./y2mate.com - despierta no es real.mp3"
+          ></audio>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.3"
+            stroke="currentColor"
+            width="130"
+            height="130"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z"
+            />
+          </svg>
+        </div>
+      </article>
+
+      <section id="videos-section">
+        <div>
+          <h3>MULTIMEDIA VIDEOS</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            width="120"
+            height="120"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"
+            />
+          </svg>
+        </div>
+        <video
+          controls="controls"
+          src="./y2mate.com - videos cortos    10 segundos_v240P.mp4"
+        ></video>
+        <video
+          controls="controls"
+          
+          src="./y2mate.com - Prueba corto 30 segundos_v240P.mp4"
+        ></video>
+      </section>
+    </main>
+
+    <footer>
+       <p>
+        Hecho por <strong>Tomas Estrada</strong> - 2024 | Programación Web
+       </p>
+    </footer>
+  </body>
+</html>
