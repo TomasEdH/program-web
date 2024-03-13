@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    @font-face {
+      font-family: Menlo;
+      src: url(./Fonts/Menlo-Regular.ttf);
+    }
+
+    body {
+      font-family: Menlo;
+      max-width: 800px;
+      margin: 0 auto;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    
+
+    p{
+      color: #666;
+    }
+
+    header {
+      padding-top: 20px;
+      margin-bottom: 30px;
+      ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+          text-decoration: none;
+          list-style-type: none;
+
+          a {
+            text-decoration: none;
+            color: black;
+            color: #666;
+          }
+        }
+      }
+    }
+
+    #profile-picture {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+    }
+
+    #estudios-section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #estudios-text {
+      display: flex;
+      max-width: 400px;
+      flex-direction: column;
+      word-break: normal;
+
+      img {
+        width: 20px;
+        height: auto;
+      }
+    }
+
+    #socials {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      a:hover {
+        scale: 1.2;
+      }
+    }
+
+    .sections {
+      margin-top: 50px;
+      padding: 0 58px;
+    }
+
+    .trabajos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h5,
+      p {
+        font-size: 14px;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Estudios</a></li>
+          <li><a href="">Portafolio</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="estudios-section">
+      <div id="estudios-text">
+        <h3>Estudios</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+          officia explicabo quo ut nam illo voluptates. Assumenda molestias hic
+          dicta earum quaerat illum quae rem inventore, culpa voluptatum? Nemo,
+          rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+          dolore tenetur at, repellat aspernatur aliquam tempore laboriosam
+          dignissimos, error sequi veritatis velit dolor incidunt quidem labore
+          sit porro vero omnis? ÑLorem ipsum dolor.
+        </p>
+        <div id="socials">
+          <a href="">
+            <img src="./linkedin.png" alt="" />
+          </a>
+          <a href="">
+            <img src="./twitter.png" alt="" />
+          </a>
+          <a href="" target="_blank">
+            <img src="./email.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div>
+        <img
+          id="profile-picture"
+          src="./perfil-guapo-joven-elegante-mirando-izquierda_176420-19643.avif"
+          alt="Foto de perfil"
+        />
+      </div>
+    </section>
+
+    <section class="sections">
+      <h3>Portafolio</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+        exercitationem nobis possimus tempore excepturi molestias voluptate!
+        Ipsa alias sint cupiditate quod. Inventore recusandae non praesentium
+        blanditiis officiis tenetur voluptate nam! Dignissimos eius rerum ipsam
+        magnam dicta voluptatibus beatae laboriosam maxime rem veritatis
+        mollitia sapiente nobis, sed expedita consequuntur quasi exercitationem
+        nostrum officia minima temporibus corrupti accusantium doloremque
+        repellendus aspernatur? Ut.
+      </p>
+
+      <h4>Experiencia laboral</h4>
+      <div class="trabajos">
+        <h5>Trabajo 1</h5>
+        <p>2022 - Actualidad</p>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        iusto vero consequuntur nam quos et enim adipisci veritatis dolorum
+        inventore facere magni, eaque molestiae ipsa saepe explicabo
+        perspiciatis ducimus? Dolores.
+      </p>
+      <div class="trabajos">
+        <h5>Trabajo 2</h5>
+        <p>2019 - 2020</p>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        iusto vero consequuntur nam quos et enim adipisci veritatis dolorum
+        inventore facere magni, eaque molestiae ipsa saepe explicabo
+        perspiciatis ducimus? Dolores.
+      </p>
+    </section>
+
+    <section class="sections">
+      <h3>Contacto</h3>
+      <form action=""></form>
+    </section>
+  </body>
+</html>
