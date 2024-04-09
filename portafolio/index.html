@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+
+    *{
+      scroll-behavior: smooth;
+    }
+
+    @font-face {
+      font-family: Menlo;
+      src: url(./Fonts/Menlo-Regular.ttf);
+    }
+
+    body {
+      font-family: Menlo;
+      max-width: 800px;
+      margin: 0 auto;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    p,
+    span {
+      color: #666;
+    }
+
+    header {
+      padding-top: 40px;
+      ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+          text-decoration: none;
+          list-style-type: none;
+
+          a {
+            text-decoration: none;
+            color: black;
+            color: #666;
+          }
+        }
+      }
+    }
+
+    #profile-picture {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+    }
+
+    #estudios-section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      margin-top: 100px;
+    }
+
+    #estudios-text {
+      display: flex;
+      max-width: 400px;
+      flex-direction: column;
+      word-wrap: break-word;
+
+      img {
+        width: 20px;
+        height: auto;
+      }
+    }
+
+    #estudios-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding-bottom: 15px;
+    }
+
+    #socials {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      a:hover {
+        scale: 1.2;
+      }
+    }
+
+    .sections {
+      margin-top: 100px;
+      padding: 0 58px;
+    }
+
+    .trabajos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h5,
+      p {
+        font-size: 14px;
+      }
+    }
+
+    #contacto {
+      li {
+        text-decoration: none;
+        list-style-type: none;
+        color: #666;
+      }
+    }
+
+    #contacto form {
+      margin-top: 20px;
+    }
+
+    #contacto form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    #contacto form input[type="text"],
+    #contacto form input[type="email"],
+    #contacto form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #contacto form textarea {
+      height: 100px; /* Altura del área de texto */
+    }
+
+    #contacto form input[type="submit"] {
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #contacto form input[type="submit"]:hover {
+      background-color: #0056b3; /* Cambio de color al pasar el ratón sobre el botón */
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      padding: 70px 0 20px 0;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#estudios">Estudios</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#contacto1">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="estudios-section">
+      <div id="estudios-text">
+        <h3>Estudios</h3>
+        <p>
+          Como estudiante de programación comprometido, estoy constantemente
+          buscando oportunidades para expandir mis conocimientos y habilidades
+          en el campo de la informática. Mi pasión por la resolución de
+          problemas y la creatividad me impulsa a explorar nuevas tecnologías y
+          aprender continuamente.
+        </p>
+        <div id="estudios-info">
+          <strong>Certficado Desarrollador Full Stack</strong>
+          <span>Escuela Digital House</span>
+          <span>2022-2023</span>
+        </div>
+        <div id="socials">
+          <a href="">
+            <img src="./img/linkedin.png" alt="" />
+          </a>
+          <a href="">
+            <img src="./img/twitter.png" alt="" />
+          </a>
+          <a href="">
+            <img src="./img/email.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div>
+        <img
+          id="profile-picture"
+          src="./img/logo.jpg"
+          alt="Foto de perfil"
+        />
+      </div>
+    </section>
+
+    <section id="portafolio" class="sections">
+      <h3>Portafolio</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+        exercitationem nobis possimus tempore excepturi molestias voluptate!
+        Ipsa alias sint cupiditate quod. Inventore recusandae non praesentium
+        blanditiis officiis tenetur voluptate nam! Dignissimos eius rerum ipsam
+        magnam dicta voluptatibus beatae laboriosam maxime rem veritatis
+        mollitia sapiente nobis, sed expedita consequuntur quasi exercitationem
+        nostrum officia minima temporibus corrupti accusantium doloremque
+        repellendus aspernatur? Ut.
+      </p>
+
+      <h4>Experiencia laboral</h4>
+      <div class="trabajos">
+        <h5>Trabajo 1</h5>
+        <p>2022</p>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        iusto vero consequuntur nam quos et enim adipisci veritatis dolorum
+        inventore facere magni, eaque molestiae ipsa saepe explicabo
+        perspiciatis ducimus? Dolores.
+      </p>
+      <div class="trabajos">
+        <h5>Trabajo 2</h5>
+        <p>2019 - 2020</p>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        iusto vero consequuntur nam quos et enim adipisci veritatis dolorum
+        inventore facere magni, eaque molestiae ipsa saepe explicabo
+        perspiciatis ducimus? Dolores.
+      </p>
+    </section>
+
+    <section id="contacto" class="sections">
+      <h3>Contacto</h3>
+      <p>¡Puedes contactarme utilizando la información a continuación!</p>
+      <ul>
+        <li>Correo electrónico: tomasestrada@gmail.com</li>
+        <li>Teléfono: +1234567890</li>
+        <li>Dirección: 123 Calle Inexistente, Bogotá</li>
+      </ul>
+      <form
+        id="contacto1"
+        action="mailto:tomasestrada@gmail.com<"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" /><br />
+        <label for="email">Correo electrónico:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="mensaje">Mensaje:</label><br />
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea
+        ><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <footer>
+      <p>Hecho por <strong>Tomas Estrada</strong> 2024 | Programación Web</p>
+    </footer>
+  </body>
+</html>

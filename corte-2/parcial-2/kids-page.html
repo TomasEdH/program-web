@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./data-kids.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ropa para Niños</title>
+  </head>
+
+  <style>
+    #app-kids {
+      position: absolute;
+      top: 0;
+      z-index: -2;
+      height: 100vh;
+      width: 100vw;
+      background: white;
+      background-image: radial-gradient(
+        ellipse 80% 80% at 50% -20%,
+        rgba(102, 49, 201, 0.73),
+        rgba(255, 255, 255, 0)
+      );
+      overflow-x: hidden;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 90px;
+      max-width: 1200px;
+      height: 100vh;
+      margin: 0 auto;
+      overflow: hidden;
+      margin-top: 60px;
+      div {
+        border-radius: 10px;
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .item-name {
+      font-size: 15px;
+    }
+
+    #mans-title {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 4rem;
+      opacity: 1;
+      background-image: linear-gradient(to right, #0c0c0c, #475569, #1f2937);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      line-height: 1.5;
+      color: transparent;
+    }
+
+    h4 {
+      opacity: 0.8;
+    }
+
+    p {
+      opacity: 0.8;
+      font-weight: 600;
+    }
+
+    span {
+      text-align: center;
+      display: block;
+      opacity: 0.9;
+    }
+
+    footer {
+      padding-top: 90px;
+    }
+  </style>
+
+  <body>
+    <div id="app-kids">
+      <nav>
+        <ul>
+          <div class="list-content">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </div>
+          <div id="social-container">
+            <a href="https://github.com/TomasEdH">
+              <img id="social" src="./sources/github-svgrepo-com.svg" alt="" />
+            </a>
+          </div>
+        </ul>
+      </nav>
+      <div class="items-section">
+        <h3 id="mans-title">Ropa para niños</h3>
+        <span
+          >Aquí te mostramos nuestra selección de productos disponibles en
+          tiempo real</span
+        >
+
+        <section></section>
+      </div>
+
+      <footer>
+        <strong>Real Sport™ 2024</strong>
+      </footer>
+    </div>
+  </body>
+</html>
